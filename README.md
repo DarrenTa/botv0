@@ -4,6 +4,19 @@ Here you will find `main.py` which is a python script that acts as a trading bot
 
 These scripts are provided as is and without warranty.  
 
+The script has a flow illustrated by the following flow chart:
+
+![Flow Chart](img/flowchart.png)
+
+There are three states of this bot.
+
+*  `wait`: which is when there are no orders are placed.
+*  sale phase (`sp`): which is when sell orders have been placed but there none have executed.
+*  buy phase (`bp`): some of the sell orders have been executed and a buy order to buy back has been made.
+
+When the buy order fully executes the bot returns to the `wait` phase.
+
+
 ## Installation
 
 I make a python3 virtual environment and install
