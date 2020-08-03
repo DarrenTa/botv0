@@ -11,7 +11,7 @@ The script has a flow illustrated by the following flow chart:
 There are three states of this bot.
 
 *  `wait`: which is when there are no orders are placed.
-*  sale phase (`sp`): which is when sell orders have been placed but there none have executed.
+*  sale phase (`sp`): which is when sell orders have been placed but none have executed.
 *  buy phase (`bp`): some of the sell orders have been executed and a buy order to buy back has been made.
 
 When the buy order fully executes the bot returns to the `wait` phase.
