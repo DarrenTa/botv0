@@ -40,7 +40,7 @@ the [next version](https://github.com/DarrenTa/botv1).
 The general idea is that the sell orders are placed so that the average sell price goes up linerally with the price.  The bot will then buy at a percentage 
 below the average price that percentage minus fees would be the profit.  
 
-[Here's a write up about why the math works out.](https://www.darrentapp.com/pdfs/weightedsum.pdf)
+[Here's a write up about why the math works out.](https://www.darrentapp.com/pdfs/weightedsum.pdf) Special thanks to Mark Campana for providing a correction.
 This is not the exact sequence used in this bot, but the intention is that the same property will hold. 
 
 I avoid what is generally refereed to as technical analysis. This bot might fit in as a regression to the mean strategy. As the price pops up 
