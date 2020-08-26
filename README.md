@@ -33,11 +33,24 @@ provided at `pro.log`.
 This script was mainly for testing purposes and has provided data
 that will allow for a better bot.  I consider this a nice first attempt,
 and am only providing this to illustrate the thought process that led to
-the next version.
+the [next version](https://github.com/DarrenTa/botv1).
+
+## Math Behind Trading strategy
+
+The general idea is that the sell orders are placed so that the average sell price goes up linerally with the price.  The bot will then buy at a percentage 
+below the average price that percentage minus fees would be the profit.  
+
+[Here's a write up about why the math works out.](https://www.darrentapp.com/pdfs/weightedsum.pdf)
+This is not the exact sequence used in this bot, but the intention is that the same property will hold. 
+
+I avoid what is generally refereed to as technical analysis. This bot might fit in as a regression to the mean strategy. As the price pops up 
+it will eventually regress to the mean of previous prices. 
+
+Note that this bot was made expecting the Dash price would increase.  If I thought the dash price would decrease I would use USD to buy dash at different levels and sell above the average buy. That's on the to do list, toward the bottom.
+
+## Improvements
 
 Note the bot was hung for quite some time.  It had sell orders that never executed.
 Finally they executed.  Intervention could have arrested this latent period.
-However, my next approach will be to completely rewrite this bot to improve
+However, my [next approach](https://github.com/DarrenTa/botv1) will be to completely rewrite this bot to improve
 profitability.  
-
-Other scripts I use have a much greater return.
